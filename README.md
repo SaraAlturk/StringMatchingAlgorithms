@@ -13,7 +13,7 @@ This repository contains implementations and analysis of the Brute Force and Hor
 
 The project implements and compares the performance of the Brute Force and Horspool string matching algorithms.
 
-It reads a specified number of lines from an input text file `input.txt` , generates random patterns, and searches for these patterns within the text using both algorithms.
+It reads a specified number of lines from an input text file [Input Text File](StringMatching%20Algorithms/input.txt), generates random patterns, and searches for these patterns within the text using both algorithms.
 
 The running times are measured and compared to analyze the efficiency in nanoseconds.
 
@@ -26,7 +26,7 @@ The main class serves as the entry point for executing all the processes involve
 
 ### Input Handling
 
-The project starts by reading data from an input file (`input.txt`), storing the data in a `String` variable after converting it to lowercase. This step ensures consistency during pattern matching, as case sensitivity could lead to incorrect results. Efficient input handling is crucial for managing text data and preparing it for the pattern generation and matching phases.
+The project starts by reading data from an input file:  [Input Text File](StringMatching%20Algorithms/input.txt), storing the data in a `String` variable after converting it to lowercase. This step ensures consistency during pattern matching, as case sensitivity could lead to incorrect results. Efficient input handling is crucial for managing text data and preparing it for the pattern generation and matching phases.
 
 ### Pattern Generation
 
@@ -113,6 +113,6 @@ The preprocessing using a `HashMap` and a `HashSet` added a layer of complexity 
 
 Moreover, the text and patterns were randomly generated, which sometimes resulted in less favorable conditions for Horspool's optimizations. The randomness could lead to cases where most characters in the pattern appear frequently in the text, resulting in minimal skip values and making Horspool's advantage less apparent.
 
-Additionally, the characteristics of the `input.txt` file played a significant role in determining the efficiency of the algorithms. The lack of structured and diverse data limited the performance benefits that could be gained from Horspool's shifting mechanism.
+Additionally, the characteristics of the [Input Text File](StringMatching%20Algorithms/input.txt) played a significant role in determining the efficiency of the algorithms. The lack of structured and diverse data limited the performance benefits that could be gained from Horspool's shifting mechanism.
 
 However, Horspool's algorithm can be highly efficient in larger, more structured datasets where its ability to skip large portions of text is advantageous. The results underscore the importance of understanding the context and characteristics of the input data when choosing an appropriate string matching algorithm.
